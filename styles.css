@@ -1,0 +1,161 @@
+/* General Body Styling - Retained from inspiration */
+body {
+    font-family: 'Space Mono', monospace;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: #fdfdfd;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Layout: Sidebar + Content - Retained */
+.main-container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling - Retained */
+header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* --- NEW & MODIFIED STYLES --- */
+
+/* Navigation Sidebar - Modified for Structure */
+nav {
+    width: 320px; /* Slightly wider for more structure */
+    padding: 2rem;
+    border-right: 1px solid #eee;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.nav-section {
+    margin-bottom: 2.5rem;
+}
+
+.nav-section h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+.nav-section h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-section ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    text-decoration: none;
+    color: #555;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.nav-section ul li a:hover {
+    background: #f4f4f4;
+    color: #000;
+}
+
+.nav-section ul li a.active {
+    background: #e0e0e0;
+    color: #000;
+    font-weight: 700;
+}
+
+/* Main Content Area - Retained */
+main {
+    flex: 1;
+    padding: 2rem 3rem;
+    min-width: 0;
+}
+
+/* Fragment Styling - NEW */
+article.fragment-reconstruction {
+    border-left: 3px solid #ccc;
+    padding-left: 2rem;
+}
+
+.fragment-header {
+    margin-bottom: 2rem;
+}
+
+.fragment-id {
+    display: block;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.25rem;
+}
+
+.fragment-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+.fragment-source {
+    display: block;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Footer - Retained */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #888;
+    background: #fff;
+}
+
+/* Responsive Design - Retained */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding: 1rem;
+    }
+    main {
+        padding: 1.5rem;
+    }
+}
