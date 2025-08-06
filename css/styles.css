@@ -159,3 +159,10 @@ footer {
         padding: 1.5rem;
     }
 }
+
+/* --- Header Link Styling --- */
+/* Ensures the main title link is not underlined and inherits the header color */
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
