@@ -133,6 +133,22 @@ article.fragment-reconstruction {
     margin-top: 0.5rem;
 }
 
+/* Lexicon Styling - NEW */
+main article dl dt {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+main article dl dd {
+    margin-left: 0;
+    margin-bottom: 2rem; /* This creates the space between entries */
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid #eee;
+}
+
+
 /* Footer - Retained */
 footer {
     text-align: center;
